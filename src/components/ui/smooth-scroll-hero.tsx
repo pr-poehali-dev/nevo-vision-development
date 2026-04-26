@@ -1,8 +1,7 @@
 import type * as React from "react"
 import { useRef } from "react"
 import { motion, useMotionTemplate, useScroll, useTransform } from "framer-motion"
-import { LiquidButton } from "@/components/ui/liquid-glass-button"
-import { MapPin, Users, Calendar, Trophy } from "lucide-react"
+
 
 interface SmoothScrollHeroProps {
   scrollHeight?: number
@@ -85,83 +84,6 @@ const SmoothScrollHero: React.FC<SmoothScrollHeroProps> = ({
           }}
         >
           <div className="text-center text-white max-w-4xl mx-auto px-6">
-            {/* Main CTA Heading */}
-            <h2 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-wider mb-6 leading-none">
-              ГОТОВ
-              <br />
-              <span className="bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">
-                БЕЖАТЬ С НАМИ?
-              </span>
-            </h2>
-
-            {/* Supporting Text */}
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-200 mb-8 leading-relaxed font-medium">
-              Присоединяйся к тысячам бегунов по всему миру, которые нашли свою команду,
-              <br className="hidden md:block" />
-              раздвинули границы возможного и открыли свой истинный потенциал.
-            </p>
-
-            {/* Stats Grid */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-              <div className="text-center">
-                <div className="flex justify-center mb-2">
-                  <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                    <Users className="w-5 h-5 text-white" />
-                  </div>
-                </div>
-                <div className="text-2xl md:text-3xl font-black text-white mb-1">50 000+</div>
-                <div className="text-xs md:text-sm text-gray-300 font-medium">Бегунов</div>
-              </div>
-
-              <div className="text-center">
-                <div className="flex justify-center mb-2">
-                  <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                    <MapPin className="w-5 h-5 text-white" />
-                  </div>
-                </div>
-                <div className="text-2xl md:text-3xl font-black text-white mb-1">120+</div>
-                <div className="text-xs md:text-sm text-gray-300 font-medium">Городов мира</div>
-              </div>
-
-              <div className="text-center">
-                <div className="flex justify-center mb-2">
-                  <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                    <Calendar className="w-5 h-5 text-white" />
-                  </div>
-                </div>
-                <div className="text-2xl md:text-3xl font-black text-white mb-1">365</div>
-                <div className="text-xs md:text-sm text-gray-300 font-medium">Дней в году</div>
-              </div>
-
-              <div className="text-center">
-                <div className="flex justify-center mb-2">
-                  <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center">
-                    <Trophy className="w-5 h-5 text-white" />
-                  </div>
-                </div>
-                <div className="text-2xl md:text-3xl font-black text-white mb-1">10 000+</div>
-                <div className="text-xs md:text-sm text-gray-300 font-medium">Целей достигнуто</div>
-              </div>
-            </div>
-
-            {/* CTA Button */}
-            <LiquidButton
-              size="xxl"
-              className="font-bold text-xl tracking-wide px-12 py-4 bg-gray-900 hover:bg-gray-800 text-white border-2 border-gray-900 hover:scale-105 transition-all duration-300"
-            >
-              ВСТУПИТЬ В STRIDE
-            </LiquidButton>
-
-            {/* Trust Indicators */}
-            <div className="mt-12 pt-6 border-t border-white/20">
-              <p className="text-xs text-gray-400 mb-3 font-medium">НАМ ДОВЕРЯЮТ БЕГУНЫ ПО ВСЕМУ МИРУ</p>
-              <div className="flex flex-wrap justify-center items-center gap-4 text-gray-300">
-                <span className="text-xs font-semibold">ДЛЯ НОВИЧКОВ</span>
-                <span className="text-xs font-semibold">МИРОВОЕ СООБЩЕСТВО</span>
-                <span className="text-xs font-semibold">ПРОВЕРЕННЫЕ РЕЗУЛЬТАТЫ</span>
-                <span className="text-xs font-semibold">БЕСПЛАТНО</span>
-              </div>
-            </div>
           </div>
         </motion.div>
       </motion.div>

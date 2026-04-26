@@ -197,17 +197,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ position, testimonial
           boxShadow: "3px 3px 0px hsl(var(--background))",
         }}
       />
-      <h3 className={cn("text-base sm:text-xl font-medium", isCenter ? "text-white" : "text-gray-900")}>
-        "{testimonial.testimonial}"
-      </h3>
-      <p
-        className={cn(
-          "absolute bottom-8 left-8 right-8 mt-2 text-sm italic",
-          isCenter ? "text-gray-300" : "text-gray-600",
-        )}
-      >
-        - {testimonial.by}
-      </p>
+
     </div>
   )
 }

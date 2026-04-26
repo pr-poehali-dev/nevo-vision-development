@@ -1,4 +1,3 @@
-import { LiquidButton } from "@/components/ui/liquid-glass-button"
 import { Menu, ChevronLeft, ChevronRight, X } from "lucide-react"
 import { useState } from "react"
 
@@ -21,13 +20,7 @@ export default function HeroSection() {
     },
   ]
 
-  const navItems = [
-    { name: "Главная", href: "#hero" },
-    { name: "Миссия", href: "#mission" },
-    { name: "Сообщество", href: "#community" },
-    { name: "Отзывы", href: "#testimonials" },
-    { name: "Вступить", href: "#join" },
-  ]
+  const navItems: { name: string; href: string }[] = []
 
   // Navigation handlers
   const nextSlide = () => setCurrentSlide((prev) => (prev + 1) % slides.length)
@@ -57,7 +50,7 @@ export default function HeroSection() {
       {/* Navigation */}
       <nav className="relative z-20 flex items-center justify-between p-6 md:p-8">
         {/* Logo/Brand */}
-        <div className="text-white font-bold text-xl tracking-wider">STRIDE</div>
+        <div className="text-white font-bold text-xl tracking-wider"></div>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-8">
@@ -103,24 +96,7 @@ export default function HeroSection() {
       {/* Hero Content */}
       <div className="relative z-10 flex h-full items-center justify-center px-6">
         <div className="text-center text-white max-w-4xl">
-          {/* Main Title */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-wider mb-4 leading-none">
-            STRIDE
-            <br />
-            COLLECTIVE
-          </h1>
 
-          {/* Subtitle */}
-          <p className="text-xl md:text-2xl font-light tracking-wide mb-8 text-gray-200">Беговое сообщество</p>
-
-          {/* CTA Button - Now using LiquidButton */}
-          <LiquidButton
-            size="xxl"
-            className="font-semibold text-lg tracking-wide"
-            onClick={() => scrollToSection("#join")}
-          >
-            Присоединиться
-          </LiquidButton>
         </div>
       </div>
 
